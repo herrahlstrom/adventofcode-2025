@@ -55,7 +55,7 @@ async Task<int> Part2()
 
 async IAsyncEnumerable<int> ReadValues()
 {
-    await foreach (var line in File.ReadLinesAsync("day01.txt"))
+    await foreach (var line in File.ReadLinesAsync("input/day01.txt"))
     {
         var span = line.AsSpan();
         yield return span[0] switch
