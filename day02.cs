@@ -78,7 +78,7 @@ long Part2()
 
 static IEnumerable<Range> ReadRanges()
 {
-    var ranges = File.ReadAllText("input/day02.txt").Split(',');
+    var ranges = File.ReadAllText("input/02.txt").Split(',');
     foreach (var range in ranges)
     {
         var arr = range.Split('-');
