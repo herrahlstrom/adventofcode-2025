@@ -24,7 +24,7 @@ long Part2()
         var lineResult = new System.Text.StringBuilder(totalLength);
         int number;
         int pos = 0;
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < totalLength; i++)
         {
             FindLargestNumber(line, pos, line.Length - totalLength + lineResult.Length, out number, out pos);
             lineResult.Append(number);
